@@ -5,6 +5,10 @@ import { PlusIcon as PlusIconMini } from '@heroicons/vue/solid';
 import { CheckCircleIcon, TrashIcon } from '@heroicons/vue/outline';
 import { Web5 } from '@tbd54566975/web5';
 
+const web5 = new Web5();
+const dwnDID = ref('');
+const todos = ref([]);
+let myDid;
 
 // Loading or Creating User Data
 onBeforeMount(async () => {

@@ -5,24 +5,32 @@ import { PlusIcon as PlusIconMini } from '@heroicons/vue/solid';
 import { CheckCircleIcon, TrashIcon } from '@heroicons/vue/outline';
 import { Web5 } from '@tbd54566975/web5';
 
+
 // Loading or Creating User Data
 onBeforeMount(async () => {
+    // Displaying Todos
 
     // Populate Todos from DWN
-    const queryResponse = await web5.dwn.records.query(myDid.id, {
+
+    // Serialize Todo
+});
 
 // Adding Todos
 const newTodoDescription = ref('');
+
 async function addTodo() {
 
-    // Query Todos
-    const queryResponse = await web5.dwn.records.query(myDid.id, {
+}
 
 // Deleting Todos
 async function deleteTodo(todoRecordId) {
 
+}
+
 // Toggling Todo Status
 async function toggleTodoComplete(todoRecordId) {
+
+}
 
 </script>
 
@@ -38,7 +46,6 @@ async function toggleTodoComplete(todoRecordId) {
         <!-- Add Todo Form -->
 
         <!-- Todos -->
-
-                <!-- Delete Todo -->
+        
     </div>
 </template>

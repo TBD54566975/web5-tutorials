@@ -1,12 +1,11 @@
 <script setup>
-import { onBeforeMount, onMounted, ref, toRaw } from 'vue';
+import { onBeforeMount, ref, toRaw } from 'vue';
 import { base64url } from 'multiformats/bases/base64';
 import { PlusIcon as PlusIconMini } from '@heroicons/vue/solid';
 import { CheckCircleIcon, TrashIcon } from '@heroicons/vue/outline';
 import { Web5 } from '@tbd54566975/web5';
 
 const web5 = new Web5();
-const dwnDID = ref('');
 const todos = ref([]);
 let myDid;
 
@@ -27,12 +26,12 @@ async function addTodo() {
 }
 
 // Deleting Todos
-async function deleteTodo(todoRecordId) {
+async function deleteTodo(todoItem) {
 
 }
 
 // Toggling Todo Status
-async function toggleTodoComplete(todoRecordId) {
+async function toggleTodoComplete(todoItem) {
 
 }
 

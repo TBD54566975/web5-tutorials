@@ -1,32 +1,41 @@
 <script setup>
 import { onBeforeMount, ref, toRaw } from 'vue';
-import { base64url } from 'multiformats/bases/base64';
 import { PlusIcon as PlusIconMini } from '@heroicons/vue/solid';
 import { CheckCircleIcon, TrashIcon } from '@heroicons/vue/outline';
 import { Web5 } from '@tbd54566975/web5';
 
-// Initialize variables here
-
-// Loading or Creating User Data
 onBeforeMount(async () => {
+
+  // Populate todos from DWN
+
+  // Add entry to Todo array
 
 });
 
-// Adding ToDos
-const newTodoDescription = ref('');
+// Adding Todos
 
-// Adding a ToDo
 async function addTodo() {
 
+  // Create the record in DWN
+
+  // add DWeb message recordId as a way to reference the message for further operations
+  // e.g. updating it or overwriting it
+
 }
 
-// Deleting a ToDo
+// Delete todo
 async function deleteTodo(todoItem) {
 
+  // Delete the record in DWN
+
 }
 
-// Toggling ToDo Completion Status
+// Set a todo as complete/incomplete
 async function toggleTodoComplete(todoItem) {
+
+  // Get record in DWN
+
+  // Update the record in DWN
 
 }
 

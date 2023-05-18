@@ -6,53 +6,43 @@ import { Web5 } from '@tbd54566975/web5';
 
 onBeforeMount(async () => {
 
-  // Populate todos from DWN
+  // Populate ToDos from DWN
 
-  // Add entry to Todo array
+  // Add entry to ToDos array
 
 });
 
-// Adding Todos
+// Adding ToDos
+const newTodoDescription = ref('');
 
 async function addTodo() {
 
-  // Create the record in DWN
-
-  // add DWeb message recordId as a way to reference the message for further operations
-  // e.g. updating it or overwriting it
-
 }
 
-// Delete todo
+// Delete ToDo
 async function deleteTodo(todoItem) {
 
-  // Delete the record in DWN
-
 }
 
-// Set a todo as complete/incomplete
+// Toggling ToDo Status
 async function toggleTodoComplete(todoItem) {
-
-  // Get record in DWN
-
-  // Update the record in DWN
 
 }
 
 </script>
 
 <template>
-    <div class="flex flex-col items-center justify-center min-h-full px-8 py-12 sm:px-6">
-        <!-- Title -->
-        <div class="sm:max-w-md sm:w-full">
-            <h2 class="font-bold text-3xl text-center tracking-tight">
-                Todo List
-            </h2>
-        </div>
-        
-        <!-- Add ToDos Form -->
+  <div class="flex flex-col items-center justify-center min-h-full px-8 py-12 sm:px-6">
+      <!-- Title -->
+      <div class="sm:max-w-md sm:w-full">
+          <h2 class="font-bold text-3xl text-center tracking-tight">
+              Todo List
+          </h2>
+      </div>
+      
+      <!-- Add ToDos Form -->
 
-        <!-- ToDos -->
-        
-    </div>
+      <!-- ToDos -->
+      
+  </div>
 </template>
